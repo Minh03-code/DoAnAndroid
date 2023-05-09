@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_main">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <EditText
+                android:id="@+id/edtSearch"
+                android:layout_width="0dp"
+                android:layout_weight="8"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:hint="search"
+                android:background="@drawable/bg_edit_text_search_drawable"/>
+
+            <ImageView
+                android:id="@+id/imgSearch"
+                android:layout_width="0dp"
+                android:layout_height="0.3in"
+                android:layout_weight="2"
+                android:src="@drawable/ic_search">
+
+            </ImageView>
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <LinearLayout
+        android:id="@+id/fragment_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+    <com.example.projectandroid.player.CustomerPlayerNavigationBar
+        android:id="@+id/playerNavigationBarID"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+    </com.example.projectandroid.player.CustomerPlayerNavigationBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:orientation="vertical">
+
+    </LinearLayout>
+</LinearLayout>
